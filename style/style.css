@@ -1,0 +1,129 @@
+@import url('https://fonts.cdnfonts.com/css/stranger-things');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle at top, #000000, #800101, #4a0101);
+    font-family: 'Stranger Things', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+
+
+    button {
+        width: fit-content;
+        padding: 10px;
+        border-radius: 10px;
+        background: #000000;
+        color: #800101;
+        font-weight: bold;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 300px;
+    max-width: 100%;
+    animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+    from {filter: drop-shadow(0 0 10px red);}
+    to {filter: drop-shadow(0 0 30px red)}
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    border-radius: 15px;
+    border: 1px #000000 solid;
+    background-color: #000000;
+    text-align: center;
+    color: #800101;
+    padding: 10px;
+    gap: 10px;
+    box-shadow: 0 15px 30px rgb(66, 0, 0);
+
+    img{
+        border-radius: 20px;
+    }
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#mensagem{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#resultado{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#busca {
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #000000 !important;
+    border: solid 1px #390000 !important;
+    color: #800101 !important;
+}
+#busca:focus {
+    background-color: #000000 !important;
+    border-color: #390000 !important;
+    color: #800101 !important;
+}
+#busca::placeholder {
+    color: #4a0101;
+}
+input[type="text"]:-webkit-autofill,
+input[type="text"]:-webkit-autofill:hover,
+input[type="text"]:-webkit-autofill:focus,
+input[type="text"]:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px black inset !important;  /* Sobrescreve autocomplete no Chrome */
+    -webkit-text-fill-color:#800101  !important;
+}
+
+footer{
+    display: flex;
+    height: fit-content;
+    justify-content: space-around;
+    gap: 20px;
+    color : #800101;
+    background: radial-gradient(at top, #000000, #040303, #151212);
+    padding: 10px;
+    margin-top: auto;
+    a {
+        text-decoration: none; !important;
+        color: #4a0101 !important;
+    }
+}

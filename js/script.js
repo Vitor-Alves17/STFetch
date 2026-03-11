@@ -1,5 +1,6 @@
 async function buscarPersonagem() {
 
+  // Pega o valor digitado no input e converte para minúsculo
   const nome = document.getElementById("busca").value.toLowerCase();
 
   const resultado = document.getElementById("resultado")
@@ -33,18 +34,45 @@ async function buscarPersonagem() {
       return
     }
 
-    filtrados.forEach(item => {
-      const personagem = item.character.name
-      const ator = item.person.name
-      const imagem = item.character.image?.medium || "assets/img/sem-imagem.png"
+    // Verifica se o campo de busca não esta vazio
+    if (nome != null && nome != ""){
 
-      const curiosidadePersonagem = dadosCurio.personagens?.find(p =>
-        p.nome.toLowerCase() === personagem.toLowerCase())
+      // Percorre todos os personagens filtrados
+      filtrados.forEach(item => {
 
-      const fatoCurioso = curiosidadePersonagem ? curiosidadePersonagem.curiosidade : "Sem curiosidade cadastrada"
+        // Nome do personagem e do ator
+        const personagem = item.character.name
+        const ator = item.person.name
 
-      const card = document.createElement("div")
-      card.classList.add("card")
+        // Caso não exista imagem, usa uma imagem padrão
+        const imagem = item.character.image?.medium || "assets/img/sem-imagem.png"
+
+        // Curiosidade padrão caso não exista no JSON
+        let fatoCurioso = "Sem curiosidade cadastrada"
+
+        // Curiosidades fixas para personagens específicos
+        if (personagem === 'Jane "Eleven" Hopper') {
+          fatoCurioso = "Millie Bobby Brown raspou o cabelo de verdade para interpretar Eleven na primeira temporada."
+        }
+
+        else if (personagem === 'Maxine "Max" Mayfield') {
+          fatoCurioso = "A cena de Max correndo de Vecna ao som de 'Running Up That Hill' virou uma das mais icônicas da série."
+        }
+        // Caso não seja uma curiosidade fixa, busca no JSON local
+        else {
+          const curiosidadePersonagem = dadosCurio.personagens?.find(p =>
+            p.nome.toLowerCase() === personagem.toLowerCase()
+          )
+
+          // Se encontrar curiosidade no JSON, substitui o valor padrão
+          if (curiosidadePersonagem) {
+            fatoCurioso = curiosidadePersonagem.curiosidade
+          }
+        }
+
+        // Cria um card HTML para mostrar os dados do personagem
+        const card = document.createElement("div")
+        card.classList.add("card")
 
       card.innerHTML = `
       <img src="${imagem}" alt="${personagem}">
@@ -55,8 +83,16 @@ async function buscarPersonagem() {
       </div>
       `
 
-      resultado.appendChild(card)
-    })
+        // Adiciona o card dentro do container de resultados
+        resultado.appendChild(card)
+      })
+    } else {
+
+      // Mensagem exibida se o usuário não digitar nada
+      mensagem.innerHTML = `
+      <p>Input do nome vazio<p/>
+      `
+    }
 
   } catch (error) {
 
