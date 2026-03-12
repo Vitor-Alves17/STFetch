@@ -103,7 +103,7 @@ header {
     color: #ff0000 !important;
 }
 #busca::placeholder {
-    color: #4a0101;
+    color: #ff0000;
 }
 input[type="text"]:-webkit-autofill,
 input[type="text"]:-webkit-autofill:hover,
