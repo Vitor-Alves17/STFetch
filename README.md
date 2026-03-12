@@ -31,13 +31,10 @@ https://st-fetch.vercel.app/
 ## DEMONSTRAÇÃO EM PRINTS
 
 - Caso uma tentativa de pesquisa seja feita com o nome vazio:
-<img width="3437" height="1269" alt="Captura de tela 2026-03-11 180957" src="https://github.com/user-attachments/assets/f3781c25-75ab-40f2-b399-1e03f37c3000" />
+<img width="3437" height="1269" alt="<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/dfdc51fc-1dec-4ea4-b6f5-5e2244d39050" />
 
 - Erro na pesquisa do personagem (Caso tente procurar um personagem não existente, erre o nome ou o personagem não esteja incluso)
-<img width="3437" height="1266" alt="Captura de tela 2026-03-11 182112" src="https://github.com/user-attachments/assets/bbdf7c58-f3b9-42e2-a3c1-0615786c6b47" />
+<img width="3437" height="1266" alt="<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/4e95912b-6613-4d9f-8804-8b59fa6e3d41" />
 
 - A aplicacão funcionando
-<img width="3431" height="1210" alt="Captura de tela 2026-03-11 181019" src="https://github.com/user-attachments/assets/8b26c8fc-a330-454b-bda6-d35ce169ef85" />
-
-
-
+<img width="3431" height="1210" alt="<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/8e0a99b4-45c6-4b61-a459-b58efa5c77fa" />
