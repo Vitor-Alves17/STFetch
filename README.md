@@ -28,6 +28,10 @@ ou seja, buscar dados de uma API e mostrar no site dinamicamente.
 ## ACESSE O PROJETO
 https://st-fetch.vercel.app/
 
+## REFERENCIAS
+
+https://api.tvmaze.com/singlesearch/shows?q=Stranger%20Things&embed=cast
+
 ## DEMONSTRAÇÃO EM PRINTS
 
 - Caso uma tentativa de pesquisa seja feita com o nome vazio:
@@ -38,4 +42,5 @@ https://st-fetch.vercel.app/
 
 - A aplicacão funcionando
 <img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/8e0a99b4-45c6-4b61-a459-b58efa5c77fa" />
+
 
