@@ -23,7 +23,7 @@ body{
         padding: 10px;
         border-radius: 10px;
         background: #000000;
-        color: #800101;
+        color: #ff0000;
         font-weight: bold;
     }
 }
@@ -61,7 +61,7 @@ header {
     border: 1px #000000 solid;
     background-color: #000000;
     text-align: center;
-    color: #800101;
+    color: #ff0000;
     padding: 10px;
     gap: 10px;
     box-shadow: 0 15px 30px rgb(66, 0, 0);
@@ -95,12 +95,12 @@ header {
     border-radius: 10px;
     background-color: #000000 !important;
     border: solid 1px #390000 !important;
-    color: #800101 !important;
+    color: #ff0000 !important;
 }
 #busca:focus {
     background-color: #000000 !important;
     border-color: #390000 !important;
-    color: #800101 !important;
+    color: #ff0000 !important;
 }
 #busca::placeholder {
     color: #4a0101;
@@ -110,7 +110,7 @@ input[type="text"]:-webkit-autofill:hover,
 input[type="text"]:-webkit-autofill:focus,
 input[type="text"]:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px black inset !important;  /* Sobrescreve autocomplete no Chrome */
-    -webkit-text-fill-color:#800101  !important;
+    -webkit-text-fill-color:#ff0000  !important;
 }
 
 footer{
